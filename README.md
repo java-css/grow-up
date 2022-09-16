@@ -3,7 +3,7 @@
  * @Date: 2022-09-15 10:46:08
 -->
 
-# vue-context-menu
+# v-context
 
 ## 安装组件
 
@@ -12,6 +12,21 @@ npm i v-context
 ```
 
 ## 注册组件
+
+```
+1、插件方式
+import vContext from 'v-context'
+Vue.use(vContext)
+
+2、局部方式
+import vContext from 'v-context'
+export default {
+  // ...
+  components: {
+    vContext
+  }
+}
+```
 
 ## 使用
 

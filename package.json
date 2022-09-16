@@ -3,6 +3,11 @@
   "version": "0.1.2",
   "description": "基于 Vue 的上下文鼠标右键",
   "main": "lib/v-context.umd.min.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:java-css/v-context-menu.git"
+  },
   "keyword": [
     "v-context",
     "context-menu",

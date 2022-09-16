@@ -1,4 +1,4 @@
-import ContextMenu from "./vue-context-menu";
+import ContextMenu from "./v-context";
 const components = [ContextMenu];
 /**
  * 定义install方法，接收vue作为参数.如果使用use注册插件,则所有组件都将被注册
