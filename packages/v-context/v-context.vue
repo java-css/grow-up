@@ -9,19 +9,18 @@
     v-show="show"
     @mousedown.stop
     @contextmenu.prevent
+    class="right-menu"
   >
     <slot>
-      <section>
-        <a
-          href="javascript:;"
-          v-for="(item, key) of menu"
-          :key="key"
-          @click="handlerEvent(item.event)"
-          :class="{ disabled: item.disabled }"
-          :style="{ color: color }"
-          >{{ item.name }}</a
-        >
-      </section>
+      <a
+        href="javascript:;"
+        v-for="(item, key) of menu"
+        :key="key"
+        @click="handlerEvent(item.event)"
+        :class="{ disabled: item.disabled }"
+        :style="{ color: color }"
+        >{{ item.name }}</a
+      >
     </slot>
   </div>
 </template>
@@ -66,9 +65,9 @@ export default {
   },
   mounted() {
     this.bindEvents();
-    this.$nextTick(() => {
-      this.$el.classList.add("right-menu");
-    });
+    // this.$nextTick(() => {
+    //   this.$el.classList.add("right-menu");
+    // });
   },
   watch: {
     show(show) {
@@ -172,7 +171,7 @@ export default {
     },
   },
   beforeDestroy() {
-    this.$el.classList.remove("right-menu");
+    // this.$el.classList.remove("right-menu");
   },
 };
 </script>
